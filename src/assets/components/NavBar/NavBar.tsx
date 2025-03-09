@@ -1,4 +1,5 @@
 import { AppBar, MenuItem, styled, Toolbar } from "@mui/material"
+import { Link as RouterLink } from "react-router-dom";
 
 const NavBar=() => {
 
@@ -7,19 +8,29 @@ const NavBar=() => {
          justifyContent: 'space-evenly',
     
     }))
+    const Styledlink = styled(RouterLink)(()=>({
+        color: 'white',
+        textDecoration: 'none'
+    }))
     
 
     return (
       <>
         <AppBar position="absolute">
             <StyledToolbar>
-           <MenuItem>About</MenuItem>
-           <MenuItem>Skills</MenuItem>
-              <MenuItem>Projects</MenuItem>
+            <Styledlink to="/about">
+          <MenuItem>About</MenuItem>
+        </Styledlink>
+          <Styledlink to="/skills">
+          <MenuItem>Skills</MenuItem>
+        </Styledlink>
+        <Styledlink to="/projects">
+          <MenuItem>Projects</MenuItem>
+        </Styledlink>
               </StyledToolbar>
             </AppBar>
       </>
-    )
-  }
+    );
+  };
   
   export default NavBar
