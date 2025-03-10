@@ -1,5 +1,8 @@
 import { AppBar, MenuItem, styled, Toolbar } from "@mui/material"
 import { Link as RouterLink } from "react-router-dom";
+import BuildIcon from "@mui/icons-material/Build";
+import PersonIcon from "@mui/icons-material/Person";
+import FolderIcon from "@mui/icons-material/Folder";
 
 const NavBar=() => {
 
@@ -19,13 +22,19 @@ const NavBar=() => {
         <AppBar position="absolute">
             <StyledToolbar>
             <Styledlink to="/about">
-          <MenuItem>About</MenuItem>
+          <MenuItem>
+          <PersonIcon sx={{ marginRight: "0.5rem" }} />
+          About</MenuItem>
         </Styledlink>
           <Styledlink to="/skills">
-          <MenuItem>Skills</MenuItem>
+          <MenuItem>
+          <BuildIcon sx={{ marginRight: "0.5rem" }} /> 
+          Skills</MenuItem>
         </Styledlink>
         <Styledlink to="/projects">
-          <MenuItem>Projects</MenuItem>
+          <MenuItem>
+          <FolderIcon sx={{ marginRight: "0.5rem" }} />
+          Projects</MenuItem>
         </Styledlink>
               </StyledToolbar>
             </AppBar>

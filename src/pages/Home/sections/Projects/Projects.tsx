@@ -4,17 +4,29 @@ const Projects = () => {
     const repos = [
         {
             id: 1,
-            name: "project1",
+            name: "Space Invaders",
             description: "description1",
             url: "https://github.com/Ronaldosdeltas/sapace_invaders",
             url: "https://ronaldosdeltas.github.io/sapace_invaders/"
         },
         {
             id: 2,
-            name: "project2",
+            name: "Game Rock, Paper, Scissors",
             description: "description1",
-            url: "url1"
-        }
+            url: "https://github.com/Ronaldosdeltas/game_R.P.S"
+        },
+        {
+          id: 3,
+          name: "ProtectedPDF",
+          description: "description1",
+          url: "https://github.com/Ronaldosdeltas/protectedPDF"
+      },
+      {
+        id: 4,
+        name: "Sistema, com sensor, câmera e lampada inteligente",
+        description: "description1",
+        url: "https://github.com/Ronaldosdeltas/CLproject2"
+    },
     ]
     return(
         <Box sx={{ padding: "2rem", backgroundColor: "#1f1f1f" }}>
@@ -24,7 +36,10 @@ const Projects = () => {
       <Grid container spacing={4} justifyContent="center">
         {repos.map((repo) => (
           <Grid item xs={12} md={4} key={repo.id}>
-            <Card sx={{ backgroundColor: "#2c2c2c", color: "#fff" }}>
+            <Card sx={{ backgroundColor: "#2c2c2c", color: "#fff",
+              "&:hover": {
+                transform: "scale(1.05)",}
+             }}>
               <CardContent>
                 <Typography variant="h6">{repo.name}</Typography>
                 <Typography variant="body2">{repo.description}</Typography>
