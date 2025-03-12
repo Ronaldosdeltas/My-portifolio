@@ -38,7 +38,10 @@ const Projects = () => {
           <Grid item xs={12} md={4} key={repo.id}>
             <Card sx={{ backgroundColor: "#2c2c2c", color: "#fff",
               "&:hover": {
-                transform: "scale(1.05)",}
+                backgroundColor: "#292929",
+                transform: "scale(1.05)",
+                boxShadow: "0px 0px 10px rgba(78, 90, 190, 0.8)",
+              },
              }}>
               <CardContent>
                 <Typography variant="h6">{repo.name}</Typography>

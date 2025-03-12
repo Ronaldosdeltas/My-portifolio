@@ -1,9 +1,8 @@
 import { Box, Container, Typography, Avatar, Grid, Button, styled } from "@mui/material";
 import { GitHub, LinkedIn, Email } from "@mui/icons-material";
 import React from "react";
-import aboutme from "../../../../assets/images/aboutme.jpg";
-import { AnimatedBackground } from "../../../../assets/components/AnimatedBackground/AnimatedBackground";
-
+import me from "../../../../assets/images/me.jpeg";
+import MatrixBackground from "../../../../assets/components/AnimatedBackground/MatrixBackground";
 const StyledAvatar = styled(Avatar)(({ theme }) => ({
   width: 150,
   height: 150,
@@ -13,10 +12,13 @@ const StyledAvatar = styled(Avatar)(({ theme }) => ({
 
 const About = () => {
   return (
+    <Box sx={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}>
+    
+    <MatrixBackground />
 
-    <Box sx={{ backgroundColor: "#1f1f1f", padding: "4rem 0", minHeight: "100vh" }}>
-      <Container maxWidth="md">
-        <StyledAvatar src={aboutme} alt="Your Name" />
+    <Box sx={{ backgroundColor: "rgba(31, 31, 31, 0.9)", padding: "4rem 0", minHeight: "100vh", position: "relative", zIndex: 1 }}>
+    <Container maxWidth="md">
+        <StyledAvatar src={me} alt="Your Name" />
         <Typography variant="h3" color="primary.contrastText" align="center" gutterBottom>
           About Me
         </Typography>
@@ -70,6 +72,7 @@ const About = () => {
         </Grid>
       </Container>
     </Box>
+  </Box>
   );
 };
 
