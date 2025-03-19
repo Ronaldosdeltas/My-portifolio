@@ -14,7 +14,7 @@ const Skills = () => {
   ];
 
   return (
-    <Box sx={{ padding: "2rem", backgroundColor: "#1f1f1f", color: "#fff" }}>
+    <Box sx={{ padding: "2rem", backgroundColor: "#1f1f1f", color: "#fff", marginTop: "4rem" }}>
       <Typography variant="h3" align="center" gutterBottom>
         Skills
       </Typography>

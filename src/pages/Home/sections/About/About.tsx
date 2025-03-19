@@ -3,7 +3,6 @@ import { GitHub, LinkedIn, Email } from "@mui/icons-material";
 import React from "react";
 import me from "../../../../assets/images/me.jpeg";
 import MatrixBackground from "../../../../assets/components/AnimatedBackground/MatrixBackground";
-
 const StyledAvatar = styled(Avatar)(({ theme }) => ({
   width: 150,
   height: 150,

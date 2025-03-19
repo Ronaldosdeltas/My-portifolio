@@ -29,7 +29,7 @@ const Projects = () => {
     },
     ]
     return(
-        <Box sx={{ padding: "2rem", backgroundColor: "#1f1f1f" }}>
+        <Box sx={{ padding: "2rem", backgroundColor: "#1f1f1f", marginTop: "4rem" }}>
       <Typography variant="h3" color="primary.contrastText" align="center" gutterBottom>
         Projects
       </Typography>
