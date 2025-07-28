@@ -1,5 +1,5 @@
 import { Box, Container, Grid, styled, Typography } from "@mui/material"
-import Ronaldoss from "../../../../assets/images/Ronaldoss.jpg"
+import Ronaldoss from "../../../../assets/images/ronaldoss.jpg"
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import EmailIcon from '@mui/icons-material/Email';
 import { Button } from '@mui/material';
