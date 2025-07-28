@@ -1,6 +1,5 @@
 import { Box, Container, Typography, Avatar, Grid, Button, styled } from "@mui/material";
 import { GitHub, LinkedIn, Email } from "@mui/icons-material";
-import React from "react";
 import me from "../../../../assets/images/me.jpeg";
 import MatrixBackground from "../../../../assets/components/AnimatedBackground/MatrixBackground";
 const StyledAvatar = styled(Avatar)(({ theme }) => ({
@@ -18,12 +17,7 @@ const educationData = [
   { title: "Level High School", subtitle: "EEMTI - Valdo de Vasconcelos Rios", year: "2010 - 2012" },
 
 ];
-const experienceData = [
-  { title: "Front-end Developer", subtitle: "Company Name", year: "2021 - Present" },
-  { title: "Back-end Developer", subtitle: "Company Name", year: "2020 - 2021" },
-  { title: "Full Stack Developer", subtitle: "Company Name", year: "2019 - 2020" },
-  { title: "Intern", subtitle: "Company Name", year: "2018 - 2019" },
-]
+
 
 const About = () => {
   return (

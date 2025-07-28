@@ -7,7 +7,6 @@ const Projects = () => {
             name: "Space Invaders",
             description: "description1",
             url: "https://github.com/Ronaldosdeltas/sapace_invaders",
-            url: "https://ronaldosdeltas.github.io/sapace_invaders/"
         },
         {
             id: 2,
